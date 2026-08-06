@@ -1,9 +1,11 @@
 # Civ 5 Era Playlist
 
+Made with Grok
+
 Personal music player for Civilization 5 sessions.  
 Sidebar switches eras → each era has its own looping playlist.
 
-## How to add songs (no code editing)
+## How to add songs
 
 1. Drop your `.mp3` / `.m4a` / `.ogg` files into the matching folder:
 
@@ -42,24 +44,16 @@ When a track plays, the player also tries to read real ID3 tags (artist, proper 
 - Keyboard: `Space` = play/pause, `←` `→` = prev/next, `S` = shuffle
 - Album art from ID3 when available
 
-## Deploy to GitHub Pages (free)
-
-1. Create a public repo and push these files
-2. Repo Settings → Pages → Source = Deploy from a branch → `main`
-3. Live at `https://yourusername.github.io/repo-name/`
-
-Remember to run `node generate-tracks.js` and commit the updated `js/tracks-data.js` whenever you add/remove songs.
-
 ## Project structure
 
 ```
 civ5-music-player/
 ├── index.html
-├── generate-tracks.js     ← run this after adding songs
+├── generate-tracks.js
 ├── css/styles.css
 ├── js/
-│   ├── app.js             ← player logic
-│   └── tracks-data.js     ← auto-generated, do not edit by hand
+│   ├── app.js
+│   └── tracks-data.js
 └── audio/
     ├── ancient/
     ├── classical/
