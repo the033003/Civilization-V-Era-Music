@@ -5,6 +5,8 @@ Made with Grok
 Personal music player for Civilization 5 sessions.  
 Sidebar switches eras → each era has its own looping playlist.
 
+<img width="1597" height="712" alt="Screenshot_20260806_133835" src="https://github.com/user-attachments/assets/d08a11a7-1769-436d-89c8-49ed8f15b4f2" />
+
 ## How to add songs
 
 1. Drop your `.mp3` / `.m4a` / `.ogg` files into the matching folder:
@@ -55,7 +57,12 @@ civ5-music-player/
 │   ├── app.js
 │   └── tracks-data.js
 └── audio/
-    ├── ancient/
-    ├── classical/
-    └── ...
+      -ancient/
+      -classical/
+      -medieval/
+      -renaissance/
+      -industrial/
+      -modern/
+      -atomic/
+      -information/
 ```
